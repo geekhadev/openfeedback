@@ -1,4 +1,4 @@
-const Features  () => {
+const Features = () => {
   return (
     <section className="py-12">
       <h2 className="text-2xl font-bold">Funcionalidades</h2>
