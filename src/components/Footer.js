@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="py-12">
       <p>
         OpenFeedback, hecho con ❤️ por @somosjuniors -
-        <a href="#">Siguenos en discord</a>
+        <a href="#" className="text-blue-400">Siguenos en discord</a>
       </p>
     </footer>
   )
