@@ -1,6 +1,6 @@
 # Código de Conducta para Contributors
 
-### Objetivo
+### Objetivo principal
 
 Este Código de Conducta está diseñado para establecer un ambiente inclusivo, respetuoso y colaborativo para todos los participantes en nuestro proyecto open source. Buscamos fomentar una comunidad diversa y amigable, donde cada individuo sea valorado.
 
