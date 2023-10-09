@@ -1,3 +1,5 @@
+import { projects, starts, valoration } from '@/constant/home'
+
 const PROJECTS = [
   {
     id: '8379b07c-5e9b-4d77-a9ae-466fdce6715b',
@@ -31,27 +33,37 @@ const PROJECTS = [
 
 const Projects = () => {
   return (
-    <section className="py-12" id="projects">
-      <h2 className="text-4xl font-bold mb-6 text-gray-400">Proyectos</h2>
-      <div className="grid grid-cols-2 gap-6">
+    <section className='py-12' id='projects'>
+      <h2 className='text-4xl font-bold mb-6 text-gray-400'>{projects}</h2>
+      <div className='grid grid-cols-2 gap-6'>
         {PROJECTS.map(({ id, title, image, description, categories }) => (
-          <div key={id} className="border border-gray-200 rounded-lg shadow">
-            <a href="#">
-              <img className="rounded-t-lg" src={image} alt={title} />
+          <div key={id} className='border border-gray-200 rounded-lg shadow'>
+            <a href='#'>
+              <img className='rounded-t-lg' src={image} alt={title} />
             </a>
-            <div className="p-5">
-              <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
+            <div className='p-5'>
+              <a href='#'>
+                <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
+                  {title}
+                </h5>
               </a>
-              <p className="font-normal text-gray-700 dark:text-gray-400">{description}</p>
-              <div className="flex">
+              <p className='font-normal text-gray-700 dark:text-gray-400'>
+                {description}
+              </p>
+              <div className='flex'>
                 {categories.map((category) => (
-                  <span key={category} className="mr-1 text-gray-400">{category}</span>
+                  <span key={category} className='mr-1 text-gray-400'>
+                    {category}
+                  </span>
                 ))}
               </div>
-              <div className="flex flex-col">
-                <p>Valoración: <span className="text-yellow-400">★★★★★</span></p>
-                <p>Feedbacks: <span className="text-gray-400">0</span></p>
+              <div className='flex flex-col'>
+                <p>
+                  {valoration}:<span className='text-yellow-400'>{starts}</span>
+                </p>
+                <p>
+                  Feedbacks: <span className='text-gray-400'>0</span>
+                </p>
               </div>
             </div>
           </div>

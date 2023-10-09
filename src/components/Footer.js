@@ -1,9 +1,13 @@
+import { paragraphFooter, titleLinkFooter } from '@/constant/home'
+
 const Footer = () => {
   return (
-    <footer className="py-12">
+    <footer className='py-12'>
       <p>
-        OpenFeedback, hecho con ❤️ por @somosjuniors -
-        <a href="#" className="text-blue-400">Siguenos en discord</a>
+        {paragraphFooter} -
+        <a href='#' className='text-blue-400'>
+          {titleLinkFooter}
+        </a>
       </p>
     </footer>
   )
