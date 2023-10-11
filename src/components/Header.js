@@ -1,4 +1,4 @@
-import { login, projects, register, title } from "@/constant/home";
+import { login, projects, register, title } from '@/constant/home'
 
 const Header = () => {
   return (
@@ -18,7 +18,7 @@ const Header = () => {
         </a>
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
