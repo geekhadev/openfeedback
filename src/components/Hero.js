@@ -3,7 +3,7 @@ import { paragraphHero, titleButtonHero, welcome } from '@/constant/home'
 const Hero = () => {
   return (
     <section className='flex flex-col gap-6 h-full justify-center'>
-      <h2 className='text-6xl font-bold max-w-2xl'>{welcome}</h2>
+      <h2 className='text-6xl font-bold text-[#DA297A] max-w-2xl'>{welcome}</h2>
       <p className='text-lg max-w-2xl text-gray-300'>{paragraphHero}</p>
       <div className='flex gap-2'>
         <button

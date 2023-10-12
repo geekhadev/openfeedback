@@ -7,13 +7,13 @@ const Header = () => {
         {title}
       </h1>
       <nav className='gap-4 flex text-xl'>
-        <a className='font-bold hover:text-pink-400' href='/#projects'>
+        <a className='font-bold text-purple-400 hover:text-[#DA297A]' href='/#projects'>
           {projects}
         </a>
-        <a className='font-bold hover:text-pink-400' href='#'>
+        <a className='font-bold text-purple-400 hover:text-[#DA297A]' href='#'>
           {login}
         </a>
-        <a className='font-bold hover:text-pink-400' href='#'>
+        <a className='font-bold text-purple-400 hover:text-[#DA297A]' href='#'>
           {register}
         </a>
       </nav>
