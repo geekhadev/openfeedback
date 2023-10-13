@@ -3,7 +3,7 @@ import { AiFillGithub } from 'react-icons/ai'
 
 const SocialIcons = () => {
   return (
-    <>
+    <div className='flex gap-4'>
       <a
         rel='noreferrer'
         target='_blank'
@@ -20,7 +20,7 @@ const SocialIcons = () => {
       >
         {<AiFillGithub size={30} />}
       </a>
-    </>
+    </div>
   )
 }
 
