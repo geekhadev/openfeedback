@@ -3,7 +3,7 @@
 export const title = 'OpenFeedback'
 export const projects = 'Proyectos'
 export const login = 'Login'
-export const register = 'Regiter'
+export const register = 'Register'
 
 // Feature
 
