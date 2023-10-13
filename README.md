@@ -1,4 +1,4 @@
-# Quiero Mejorar 😎 (quieromejorar.dev)
+# OpenFeedback 😎 (openfeedback.dev)
 
 ## 💁 Acerca del proyecto
 
