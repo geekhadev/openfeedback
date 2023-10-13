@@ -24,18 +24,18 @@ export default Header
 
 function HeaderNavar () {
   return (
-    <header className="flex flex-row justify-between py-6 items-center">
+    <header className="flex flex-col md:flex-row md:px-6 gap-1 justify-between py-6 items-center">
       <h1 className="font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
         {title}
       </h1>
       <nav className="gap-4 flex text-xl">
-        <a className="font-bold hover:text-pink-400" href='/#projects'>
+        <a className="font-bold text-purple-400 hover:text-[#DA297A]" href='/#projects'>
           {projects}
         </a>
-        <a className="font-bold hover:text-pink-400" href='#'>
+        <a className="font-bold text-purple-400 hover:text-[#DA297A]" href='#'>
           {login}
         </a>
-        <a className="font-bold hover:text-pink-400" href='#'>
+        <a className="font-bold text-purple-400 hover:text-[#DA297A]" href='#'>
           {register}
         </a>
       </nav>
