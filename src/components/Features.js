@@ -10,9 +10,9 @@ import {
 
 const Features = () => {
   return (
-    <section className='py-12'>
+    <section className='py-12 px-6 md:px-0'>
       <h2 className='text-4xl font-bold mb-6 text-gray-400'>{features}</h2>
-      <div className='grid grid-cols-3 gap-10'>
+      <div className='grid grid-cols-1 sm:grid-cols-3 gap-10'>
         <div>
           <h3 className='text-xl font-bold'>{feadback}</h3>
           <p>{paragraphOne}</p>
