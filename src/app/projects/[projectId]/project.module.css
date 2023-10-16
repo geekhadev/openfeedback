@@ -1,0 +1,108 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 50px 0 50px;
+  height: 100vh;
+  display: flex;
+  gap: 40px;
+  position: relative;
+}
+
+.description {
+  max-width: 450px;
+  word-wrap: break-word;
+  font-size: 18px;
+  color: rgb(200, 196, 196);
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.information h3 {
+  font-size: 20px;
+}
+
+.moreInfo span {
+  color: #c084fc;
+}
+
+.moreInfo button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 20px;
+  box-shadow: 1px 2px 10px #c084fc inset;
+  transition: background 0.3s ease-in-out;
+}
+
+.moreInfo button:hover {
+  box-shadow: none;
+  background-color: #c084fc;
+}
+
+.intemsDemo {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+}
+
+.intemsDemo > :first-child {
+  font-size: 20px;
+  color: yellow;
+}
+
+.intemsDemo button {
+  padding: 5px;
+  background: linear-gradient(to bottom, transparent, #db2777) #c084fc;
+  border-radius: 40px;
+  width: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.intemsDemo button:hover {
+  opacity: 0.8;
+}
+
+.projectImg {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px #9333ea63;
+}
+
+.imgContainer {
+  max-width: 500px;
+  max-height: 800px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding-top: 20px;
+  }
+
+  .imgContainer {
+    max-width: 90%;
+  }
+
+  .information {
+    width: 90%;
+  }
+
+  .description {
+    max-width: 90%;
+  }
+}
