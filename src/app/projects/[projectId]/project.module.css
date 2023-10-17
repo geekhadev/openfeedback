@@ -18,6 +18,7 @@
 .descriptionContainer {
   /* padding: 5px; */
   max-height: 350px;
+  min-height: 350px;
   overflow-y: hidden;
   transition: all 0.2s ease-in-out;
 }
