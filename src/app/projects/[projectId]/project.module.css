@@ -15,6 +15,35 @@
   color: rgb(200, 196, 196);
 }
 
+.descriptionContainer {
+  /* padding: 5px; */
+  max-height: 350px;
+  overflow-y: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.descriptionContainer::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+.descriptionContainer::-webkit-scrollbar-thumb {
+  background-color: #c084fc;
+  border-radius: 10px;
+}
+
+.descriptionContainer::-webkit-scrollbar-thumb:hover {
+  background-color: #a56de2;
+}
+
+.descriptionContainer:hover {
+  padding: 5px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.574);
+  overflow-y: scroll;
+}
+
 .information {
   display: flex;
   flex-direction: column;
