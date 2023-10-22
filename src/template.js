@@ -1,5 +1,3 @@
-// Solo es para simular alguna data
-
 export const PROJECTS = [
   {
     author: 'Daniel H',
