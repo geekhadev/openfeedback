@@ -16,7 +16,7 @@
 }
 
 .descriptionContainer {
-  /* padding: 5px; */
+  padding: 5px;
   max-height: 350px;
   min-height: 350px;
   overflow-y: hidden;
@@ -38,7 +38,6 @@
 }
 
 .descriptionContainer:hover {
-  padding: 5px;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.574);
