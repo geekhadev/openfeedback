@@ -38,8 +38,12 @@ const Page = async ({ params }) => {
           </div>
 
           <div className={style.moreInfo}>
-            <p>
-              Categoria: <span>{'categoria'}</span>
+            <p className={style.categories}>
+              Categoria: {
+                data.categories?.map(c => {
+                  return <span key={data.id}>{c}</span>
+                })
+              }
             </p>
             <button>Hechale un vistazo al portafolio de {'usuario'}</button>
           </div>
