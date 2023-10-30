@@ -1,10 +1,9 @@
 'use client'
-import Image from 'next/image'
 import { useState } from 'react'
 import Modal from './modals/ParentModal'
 import ProjectSwiper from './ProjectSwiper'
 
-const ProjectImage = ({ src, width, height, action = true }) => {
+const ProjectImage = ({ allImages, src, width, height, action = true }) => {
   const [openModal, setOpenModal] = useState(false)
 
   const customStyle = {
@@ -22,7 +21,7 @@ const ProjectImage = ({ src, width, height, action = true }) => {
 
   return (
     <>
-      <Image
+      <img
         onClick={handleModal}
         width={width}
         height={height}
@@ -34,7 +33,7 @@ const ProjectImage = ({ src, width, height, action = true }) => {
       {openModal && (
         <Modal close={handleModal}>
           <ProjectSwiper
-            images={[{ url: '/images/bg.png' }, { url: '/images/bg.png' }]}
+            images={allImages}
             width={995}
             height={600}
             action={false}

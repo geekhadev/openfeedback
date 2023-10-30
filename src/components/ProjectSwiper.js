@@ -11,6 +11,8 @@ import 'swiper/css'
 import ProjectImage from './ProjectImage'
 
 const ProjectSwiper = ({ images, width = 500, height = 400, action }) => {
+  console.log(images)
+
   return (
     <Swiper
       className='mySwiper'
@@ -19,17 +21,20 @@ const ProjectSwiper = ({ images, width = 500, height = 400, action }) => {
       slidesPerView={1}
       pagination={true}
       navigation
-      effect='flip'
+      // effect='flip'
       keyboard
       autoplay
     >
       {images?.map((img, index) => (
-        <SwiperSlide key={index}>
+        // console.log(img)
+
+        <SwiperSlide key={img.url}>
           <ProjectImage
             width={width}
             height={height}
             src={img.url}
             action={action}
+            allImages={images}
           />
         </SwiperSlide>
       ))}
