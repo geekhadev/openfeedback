@@ -9,7 +9,7 @@ const Projects = () => {
       <h2 className='text-4xl font-bold mb-6 text-gray-400'>{projects}</h2>
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
         {PROJECTS.map(({ id, title, images, description, categories }) => (
-           <Link href={`http://localhost:3000/projects/${id}`}
+           <Link href={`/projects/${id}`}
             key={id}
             className='border border-gray-200 rounded-lg shadow w-fit'
           >
